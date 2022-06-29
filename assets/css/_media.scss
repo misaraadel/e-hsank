@@ -1,0 +1,107 @@
+@media (max-width: 999px) {
+  .navbar {
+    .hamburger {
+      display: block !important;
+    }
+
+    .navbar-nav {
+      width: 100%;
+      height: calc(100vh - 80px) !important;
+      position: absolute;
+      padding: 20px 15px;
+      background-color: #fff;
+      z-index: 99;
+      top: 80px;
+      right: -100%;
+      flex-direction: column !important;
+      justify-content: flex-start;
+      align-items: flex-start;
+      align-content: flex-start;
+      transition: all .3s linear;
+
+      &.active-nav {
+        right: 0px;
+      }
+
+      .nav-item {
+        width: 100%;
+        margin: 0px !important;
+        padding: 10px 0px;
+        border-bottom: 1px solid rgba($color: #8DC63F, $alpha: 0.3);
+
+        &:last-child {
+          border-bottom: 0px !important;
+        }
+
+        .nav-link {
+          width: 100%;
+        }
+
+        .drop-list.top-list {
+          top: unset !important;
+          bottom: 0% !important;
+        }
+      }
+
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        background: url('../images/navbar/icon.png') bottom left / contain no-repeat;
+        opacity: .1;
+        z-index: -1;
+        bottom: 100px;
+        left: 20px;
+      }
+    }
+
+    .brand-name img {
+      object-position: left !important;
+    }
+  }
+
+  header {
+    padding: 150px 0px 70px 0px;
+
+    &::after {
+      width: 100%;
+      z-index: -2 !important;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(90deg, #8DC63F, #D2B32B) !important;
+      top: 0;
+      left: 0;
+      z-index: -1;
+      opacity: .8;
+    }
+
+    h1 {
+      color: #fff !important;
+    }
+
+    p {
+      color: #f7f7f7 !important;
+    }
+  }
+
+  .services .box {
+    h2 {
+      font-size: 15px !important;
+    }
+
+    img {
+      width: 70px !important;
+      height: 70px !important;
+    }
+  }
+
+  .take .content {
+    padding: 0px !important;
+  }
+}
