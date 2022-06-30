@@ -62,31 +62,8 @@
   }
 
   header {
-    padding: 150px 0px 70px 0px;
-
-    &::after {
-      width: 100%;
-      z-index: -2 !important;
-    }
-
-    &::before {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background: linear-gradient(90deg, #8DC63F, #D2B32B) !important;
-      top: 0;
-      left: 0;
-      z-index: -1;
-      opacity: .8;
-    }
-
-    h1 {
-      color: #fff !important;
-    }
-
-    p {
-      color: #f7f7f7 !important;
+    .item {
+      padding: 150px 0px 100px 0px;
     }
   }
 
