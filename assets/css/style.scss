@@ -296,7 +296,7 @@
             width: 250px;
             background-color: #fff;
             position: absolute;
-            padding: 0px 30px;
+            padding: 0px 20px;
             top: 100%;
             left: 0;
             z-index: 999;
@@ -391,7 +391,7 @@ header {
     z-index: 8;
     height: 100px;
     background: url('../images/intro/wave.png');
-    background-size: 1000px 100px;
+    background-size: 1000px 100px;  
     animation:  patternMove 20s linear infinite !important;
   }
 
@@ -495,6 +495,7 @@ header {
 .services {
   .box {
     width: 100%;
+    height: 100%;
     padding: 20px 10px;
     background-color: #fff;
     box-shadow: 0px 0px 10px rgba($color: #8DC63F, $alpha: 0.5);
@@ -534,7 +535,13 @@ header {
       font-size: 20px;
       font-weight: 900;
       margin: 0px;
+      text-align: center;
       color: #676767;
+    }
+
+    .buttons-contain {
+      justify-content: center;
+      margin-top: 20px;
     }
 
     &:hover {
@@ -551,6 +558,18 @@ header {
 
       h2 {
         color: #fff;
+      }
+
+      .custom-bnt {
+        animation: translateX .5s linear 2;
+
+        &::after {
+          height: 0px;
+        }
+
+        &::before {
+          height: 100% !important;
+        }
       }
     }
   }
