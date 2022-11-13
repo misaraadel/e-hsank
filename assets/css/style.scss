@@ -173,7 +173,7 @@
 
 .navbar {
   width: 100%;
-  padding: 10px 30px;
+  padding: 10px 15px;
   background-color: #fff;
   position: fixed;
   top: 0;
@@ -294,6 +294,8 @@
 
           .drop-list {
             width: 250px;
+            max-height: 350px;
+            overflow-y: scroll;
             background-color: #fff;
             position: absolute;
             padding: 0px 20px;
@@ -302,7 +304,7 @@
             z-index: 999;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba($color: #D2B32B, $alpha: 0.4);
-            overflow: hidden;
+            overflow-x: hidden;
             transform: translateY(20px);
             opacity: 0;
             visibility: hidden;
@@ -430,7 +432,7 @@ header {
     h1 {
       font-size: 30px;
       font-weight: 900;
-      margin: 0px;
+      margin: 0px 0px 25px;
       color: #8DC63F;
     }
 
@@ -438,9 +440,9 @@ header {
       font-size: 15px;
       font-weight: 500;
       line-height: 1.8rem;
-      text-align: justify;
+      text-align: center;
       color: #fff;
-      margin: 25px 0px;
+      margin: 0px 0px 25px;
     }
 
     .buttons-contain {

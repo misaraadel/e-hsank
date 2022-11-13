@@ -1,4 +1,10 @@
-@media (max-width: 999px) {
+@media (max-width: 1358px) and (min-width: 900px) {
+  .navbar .content .navbar-nav .nav-item .nav-link img {
+   display: none;
+  }
+}
+
+@media (max-width: 1120px) {
   .navbar {
     .hamburger {
       display: block !important;
@@ -60,6 +66,10 @@
       object-position: left !important;
     }
   }
+}
+
+@media (max-width: 999px) {
+ 
 
   header {
     .item {
