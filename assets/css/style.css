@@ -1630,6 +1630,182 @@ header .wave-content .wave:nth-child(4) {
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
 }
 
+.about-us {
+  width: 100%;
+  padding: 60px 0px;
+}
+.about-us .image-content {
+  width: 100%;
+  height: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.about-us .image-content img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.about-us .contain {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.about-us .contain h1 {
+  font-size: 25px;
+  font-weight: 900;
+  color: #8DC63F;
+  margin-bottom: 20px;
+}
+.about-us .contain p {
+  color: var(--dark);
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0px;
+}
+.about-us .contain .list li {
+  -webkit-padding-start: 30px;
+          padding-inline-start: 30px;
+  position: relative;
+  color: var(--dark);
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 15px;
+  z-index: 9;
+}
+.about-us .contain .list li::after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #8DC63F;
+  border-radius: 3px;
+  transform: rotate(45deg);
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+.about-us .contain .list li:last-child {
+  margin-bottom: 0px;
+}
+.about-us .contain .box {
+  width: 100%;
+  height: 100%;
+  padding: 20px 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 10px rgba(141, 198, 63, 0.5);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  z-index: 9;
+  overflow: hidden;
+  transition: all 0.3s linear;
+}
+.about-us .contain .box::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #8DC63F;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  -webkit-clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+          clip-path: polygon(0 0, 0 0, 0 100%, 0% 100%);
+  transition: all 0.3s linear;
+}
+.about-us .contain .box img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 20px;
+  filter: invert(72%) sepia(22%) saturate(1080%) hue-rotate(43deg) brightness(93%) contrast(95%);
+}
+.about-us .contain .box h2 {
+  font-size: 20px;
+  font-weight: 900;
+  margin: 0px;
+  text-align: center;
+  color: var(--dark);
+}
+.about-us .contain .box p {
+  color: #676767;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 10px;
+  margin-bottom: 0px;
+  text-align: center;
+}
+.about-us .contain .box:hover {
+  transform: translateY(-10px);
+}
+.about-us .contain .box:hover::after {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.about-us .contain .box:hover img {
+  -webkit-animation: tada 0.3s linear;
+          animation: tada 0.3s linear;
+  filter: invert(100%) sepia(7%) saturate(0%) hue-rotate(73deg) brightness(106%) contrast(106%);
+}
+.about-us .contain .table-resposive {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.about-us .contain .table-resposive table {
+  width: 100%;
+  position: relative;
+}
+.about-us .contain .table-resposive table th {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 900;
+  background-color: #8DC63F;
+  vertical-align: middle;
+  padding: 10px 15px;
+  text-align: center;
+  -webkit-border-end: 1px solid rgba(255, 255, 255, 0.1);
+          border-inline-end: 1px solid rgba(255, 255, 255, 0.1);
+}
+.about-us .contain .table-resposive table th:last-child {
+  -webkit-border-end: 0px;
+          border-inline-end: 0px;
+}
+.about-us .contain .table-resposive table tbody tr:nth-child(odd) {
+  background-color: rgba(141, 198, 63, 0.06);
+  border-bottom: 1px solid rgba(141, 198, 63, 0.1);
+}
+.about-us .contain .table-resposive table tbody tr td {
+  padding: 10px 0px;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+  vertical-align: middle;
+  text-align: center;
+  -webkit-border-end: 1px solid rgba(141, 198, 63, 0.1);
+          border-inline-end: 1px solid rgba(141, 198, 63, 0.1);
+}
+.about-us .contain .table-resposive table tbody tr td:last-child {
+  -webkit-border-end: 0px !important;
+          border-inline-end: 0px !important;
+}
+.about-us .contain .table-resposive table tbody tr td a {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  color: #000;
+  font-size: 15px;
+  font-weight: 500;
+}
+
 .partners {
   background-color: #f7f7f7;
 }
