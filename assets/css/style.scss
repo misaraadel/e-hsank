@@ -715,6 +715,21 @@ header {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: all .3s linear;
+    }
+
+    &.object-content {
+      height: 600px;
+      
+      img {
+        object-fit: contain;
+      }
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.2);
+      }
     }
   }
 

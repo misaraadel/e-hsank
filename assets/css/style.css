@@ -1645,6 +1645,17 @@ header .wave-content .wave:nth-child(4) {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  transition: all 0.3s linear;
+}
+.about-us .image-content.object-content {
+  height: 600px;
+}
+.about-us .image-content.object-content img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+.about-us .image-content:hover img {
+  transform: scale(1.2);
 }
 .about-us .contain {
   width: 100%;
@@ -1956,5 +1967,8 @@ footer .content ul li a:hover img {
   }
   .take .content {
     padding: 0px !important;
+  }
+  .object-content {
+    height: 500px;
   }
 }/*# sourceMappingURL=style.css.map */
