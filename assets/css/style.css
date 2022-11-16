@@ -1800,6 +1800,9 @@ header .wave-content .wave:nth-child(4) {
 .about-us .contain .table-resposive table tbody tr td a {
   width: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   text-align: center;
   color: #000;
   font-size: 15px;
